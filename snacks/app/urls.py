@@ -1,8 +1,8 @@
 from django.urls import path
 from django.urls.resolvers import URLPattern
-# from .views
+from .views import HomeView
 
 
-URLPatterns = [
-    path('about-us/', AboutUsView.as_view(), name = 'home'),
+urlpatterns = [
+    path('', HomeView.as_view(), name = 'home'),
 ]
